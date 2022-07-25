@@ -3,6 +3,7 @@ function AboutMe() {
         <div>
             <h2>About Me</h2>
             <AboutMeEducation />
+            <AboutMeSkills />
         </div>
 
 
@@ -32,6 +33,21 @@ function AboutMeEducation() {
         </div>
         
     )
+}
+
+function AboutMeSkills() {
+    return (
+        <div>
+            <h3>Skills</h3>
+            <ul>
+                <li>Programming Languages: Python, Java, C++</li>
+                <li>Front-End: HTML, CSS, JavaScript, React JS, Figma</li>
+                <li>Back-End: PostgreSQL, Cassandra, MongoDB, Neo4j, SparkSQL</li>
+                <li>Data Science/Machine Learning Libraries: Numpy, Pandas, Matplotlib, Sci-kit Learn, TIBCO Spotfire</li>
+                <li>Team-oriented: GitHub, Jira, Slack, Microsoft Teams, Zoom</li>
+            </ul>
+        </div>
+    );
 }
 
 export default AboutMe;

@@ -1,0 +1,10 @@
+.nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+
+.nav-item {
+    list-style: none;
+
+}
