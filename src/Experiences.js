@@ -19,7 +19,7 @@ function ExperienceSkyworks() {
                 <h4>June 2022 – August 2022</h4>
             </div>
             <ul>
-                <li>Coded Python scripts to extract information from wafer fabrication data and to benchmark analytics system</li>
+                <li>Coded Python scripts to extract information from semiconductor data and to benchmark analytics system</li>
                 <li>Wrote and updated software documentation</li>
                 <li>Provided support towards the product/test engineers and other users</li>
             </ul>
