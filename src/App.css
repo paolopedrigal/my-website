@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
 * {
-  color: white;
+  font-family: 'Inter';
+  font-weight: 600;
 }

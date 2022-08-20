@@ -2,15 +2,20 @@ export default function Experiences() {
     return (
         <div>
             <h2>Experiences</h2>
-            <ExperienceSkyworks />
-            <ExperienceUCSB />
-            <ExperienceMliora />
+            <h3>Timeline</h3>
         </div>
 
     );
 }
 
-function ExperienceSkyworks() {
+function MCHS() {
+    return (
+        <></>
+    );
+}
+
+
+function ExperienceSkyworksCard() {
     return (
         <div>
             <div className="experience-header">
@@ -27,7 +32,7 @@ function ExperienceSkyworks() {
     )
 }
 
-function ExperienceUCSB() {
+function ExperienceUCSBCard() {
     return (
         <div>
             <div className="experience-header">
@@ -37,7 +42,7 @@ function ExperienceUCSB() {
             </div>
             <ul>
                 <li>Created linear regression models to detect correlations among bee-plant species interactions</li>
-                <li>Created a multiclass classification model to identify interactions by bee family </li>
+                <li>Created a multiclass classification model to identify interactions by bee family</li>
                 <li>Presented findings of patterns using heat maps and world map plots</li>
                 <li>Cleaned 27 percent of the data collected</li>
             </ul>
@@ -45,7 +50,7 @@ function ExperienceUCSB() {
     );
 }
 
-function ExperienceMliora() {
+function ExperienceMlioraCard() {
     return (
         <div>
             <div className="experience-header">
