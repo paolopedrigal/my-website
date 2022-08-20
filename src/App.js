@@ -1,4 +1,4 @@
-import Front from './Front.js';
+import Front from './Front Section/Front.js';
 import NavBar from './NavBar.js';
 import AboutMe from './AboutMe.js';
 import Experiences from './Experiences.js';

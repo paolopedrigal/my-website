@@ -1,0 +1,18 @@
+.about {
+    margin-top: 0px;
+}
+
+#about-me-section-title {
+    font-size: 150px;
+    margin: 75px 100px 30px;
+}
+
+#background-objective-title {
+    font-size: 75px;
+    margin-left: 100px;
+    color: #DDF091;
+}
+
+#about-me-selfie {
+    border-radius: 90%;    
+}

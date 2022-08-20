@@ -1,26 +1,26 @@
+import './AboutMe.css'
 import mySelfie from './Images/selfie.jpg'
+
 
 function AboutMe() {
     return (
-        <div>
-            <h2>About Me</h2>
+        <div className='about'>
+            <h2 id='about-me-section-title'>About Me</h2>
             <AboutMeBackgroundObjective />
             <AboutMeSkills />
         </div>
-
-
-    )
+    );
 }
 
 function AboutMeBackgroundObjective() {
     return (
         <div>
-            <h3>Background & Objective</h3>
-            <img src={mySelfie} alt="selfie" width="300px"/>
-            <p>My name is Paolo Pedrigal (he/him) and I am current undergraduate student at University of California, Irvine, majoring in Computer Science. 
+            <h3 id='background-objective-title'>Background & Objective</h3>
+            <img src={mySelfie} alt="selfie" width="300px" id='about-me-selfie'/>
+            <p className="about-me-text">My name is Paolo Pedrigal (he/him) and I am current undergraduate student at University of California, Irvine, majoring in Computer Science. 
             I am motivated to use my knowledge from my experiences and projects
             to become a software engineer in website development.</p>
-            <p>Other interests I have are working out, playing basketball and volleyball, and watching movies and TV. </p>
+            <p className="about-me-text">Other interests I have are working out, playing basketball and volleyball, and watching movies and TV. </p>
         </div>
     )
 }
@@ -66,30 +66,30 @@ function AboutMeSkills() {
     );
 }
 
-function AboutMeEducation() {
-    return (
-        <div>
-            <h3>Education</h3>
-            <div>
-                <b>Univeristy of California, Irvine</b>
-                <b>Degree Expected: June 2023</b>
-                <b>Bachelors of Science, Computer Science</b>
-                <ul>
-                    <li>Recipent of the Regents Scholarship</li>
-                    <li>Relevant Coursework: 
-                    Design/Analysis of Algorithms, 
-                    Data Structures & Abstraction, 
-                    Introduction to Probability & Statistics, 
-                    Methodologies of Data Visualization, 
-                    Data Management, 
-                    Information Retrieval
-                    </li>
-                </ul>
-            </div>
-        </div>
+// function AboutMeEducation() {
+//     return (
+//         <div>
+//             <h3>Education</h3>
+//             <div>
+//                 <b>Univeristy of California, Irvine</b>
+//                 <b>Degree Expected: June 2023</b>
+//                 <b>Bachelors of Science, Computer Science</b>
+//                 <ul>
+//                     <li>Recipent of the Regents Scholarship</li>
+//                     <li>Relevant Coursework: 
+//                     Design/Analysis of Algorithms, 
+//                     Data Structures & Abstraction, 
+//                     Introduction to Probability & Statistics, 
+//                     Methodologies of Data Visualization, 
+//                     Data Management, 
+//                     Information Retrieval
+//                     </li>
+//                 </ul>
+//             </div>
+//         </div>
         
-    )
-}
+//     )
+// }
 
 
 export default AboutMe;

@@ -1,10 +1,17 @@
 .nav-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-size: 25px;
+    background-color: black;
+    padding: 30px;
+    list-style: none;
 }
 
 .nav-item {
-    list-style: none;
+    background-color: transparent;
+    font-size: 45px;
+}
 
+#nav-name {
+    color: #FCFF50;
 }
