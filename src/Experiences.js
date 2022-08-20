@@ -1,8 +1,20 @@
+import MCHSImage from './Images/MCHSWideShot.webp';
+import StanfordImage from './Images/StanfordDataScience.png';
+import UCSBImage from './Images/UCSBDataScience.png';
+import MLioraImage from './Images/MLioraLLCLogo.jpg';
+import SkyworksImage from './Images/SkyworksLogo.jpg';
+
 export default function Experiences() {
     return (
         <div>
             <h2>Experiences</h2>
             <h3>Timeline</h3>
+            <MCHS />
+            <Stanford />
+            <UCSB />
+            <MLiora />
+            <Skyworks />
+            <PresentDay />
         </div>
 
     );
@@ -10,10 +22,41 @@ export default function Experiences() {
 
 function MCHS() {
     return (
-        <></>
+        <img src={MCHSImage} width='300px'/>
     );
 }
 
+function Stanford() {
+    return (
+        <img src={StanfordImage} width='300px'/>
+    );
+}
+
+function UCSB() {
+    return (
+        <img src={UCSBImage} width='300px'/>
+    );
+}
+
+function MLiora() {
+    return (
+        <img src={MLioraImage} width='300px'/>
+    );
+}
+
+function Skyworks() {
+    return (
+        <img src={SkyworksImage} width='300px'/>
+    );
+}
+
+function PresentDay() {
+    return (
+        <div>
+            <p>Present Day</p>
+        </div>
+    )
+}
 
 function ExperienceSkyworksCard() {
     return (
