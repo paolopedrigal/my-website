@@ -16,11 +16,13 @@ function AboutMeBackgroundObjective() {
     return (
         <div>
             <h3 id='background-objective-title'>Background & Objective</h3>
-            <img src={mySelfie} alt="selfie" width="300px" id='about-me-selfie'/>
-            <p className="about-me-text">My name is Paolo Pedrigal (he/him) and I am current undergraduate student at University of California, Irvine, majoring in Computer Science. 
-            I am motivated to use my knowledge from my experiences and projects
-            to become a software engineer in website development.</p>
-            <p className="about-me-text">Other interests I have are working out, playing basketball and volleyball, and watching movies and TV. </p>
+            <div className='background-content-container'>
+                <img src={mySelfie} alt="selfie" width="300px" id='background-selfie'/>
+                <p id="background-text">My name is Paolo Pedrigal (he/him) and I am current undergraduate student at University of California, Irvine, majoring in Computer Science. 
+                I am motivated to use my knowledge from my experiences and projects
+                to become a software engineer in website development.
+                Other interests I have are working out, playing basketball and volleyball, and watching movies and TV. </p>
+            </div>
         </div>
     )
 }

@@ -3,7 +3,7 @@
 }
 
 #about-me-section-title {
-    font-size: 150px;
+    font-size: 125px;
     margin: 75px 100px 30px;
 }
 
@@ -13,6 +13,17 @@
     color: #DDF091;
 }
 
-#about-me-selfie {
-    border-radius: 90%;    
+.background-content-container {
+    display: flexbox;
+    flex-direction: row;
+}
+
+#background-selfie {
+    border-radius: 90%;
+    width: 500px;
+    margin: 80px 125px;    
+}
+
+#background-text {
+    font-size: 35px;
 }
