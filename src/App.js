@@ -1,6 +1,7 @@
-import Front from './Front Section/Front.js';
+import Front from './Front.js';
 import NavBar from './NavBar.js';
 import AboutMe from './AboutMe.js';
+import Skills from './Skills.js';
 import Experiences from './Experiences.js';
 import Projects from './Projects.js';
 import Footer from './Footer.js'
@@ -12,6 +13,7 @@ function App() {
       <Front />
       <NavBar />
       <AboutMe />
+      <Skills />
       <Experiences />
       <Projects />
       <Footer />

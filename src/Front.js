@@ -1,4 +1,4 @@
-import frontPageImage from '../Images/WebsiteFrontPage.jpg';
+import frontPageImage from './Images/WebsiteFrontPage.jpg';
 import './Front.css';
 
 function Front() {

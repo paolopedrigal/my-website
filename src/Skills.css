@@ -1,0 +1,22 @@
+#skills-title {
+    font-size: 75px;
+    margin-left: 100px;
+    color: #DDF091;
+}
+
+.skills-filter {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 55px;
+    margin: auto 50px;
+}
+
+.skill-filter {
+    margin: 15px;
+    background-color: #D9D9D9;
+    color: black;
+    padding: 20px 50px;
+    border-radius: 50px;
+}
