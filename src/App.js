@@ -2,7 +2,7 @@ import Front from './Front.js';
 import NavBar from './NavBar.js';
 import AboutMe from './AboutMe.js';
 import Skills from './Skills.js';
-import Experiences from './Experiences.js';
+import Timeline from './Experiences.js';
 import Projects from './Projects.js';
 import Footer from './Footer.js'
 import './App.css';
@@ -14,7 +14,7 @@ function App() {
       <NavBar />
       <AboutMe />
       <Skills />
-      <Experiences />
+      <Timeline />
       <Projects />
       <Footer />
     </div>
