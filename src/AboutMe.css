@@ -7,23 +7,41 @@
     margin: 75px 100px 30px;
 }
 
-#background-objective-title {
+#background-objective-title, #skills-title {
     font-size: 75px;
     margin-left: 100px;
     color: #DDF091;
 }
 
 .background-content-container {
-    display: flexbox;
+    display: flex;
     flex-direction: row;
+    margin-bottom: 100px;
 }
 
 #background-selfie {
     border-radius: 90%;
-    width: 500px;
-    margin: 80px 125px;    
+    width: 550px;
+    margin: 80px 100px;    
 }
 
-#background-text {
-    font-size: 35px;
+.background-text {
+    margin: 140px 0px;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    
+}
+
+#background-text-1 {
+    padding-bottom: 50px;
+}
+
+.skills-filter {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 55px;
+    margin: auto 60px;
 }

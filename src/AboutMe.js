@@ -18,10 +18,12 @@ function AboutMeBackgroundObjective() {
             <h3 id='background-objective-title'>Background & Objective</h3>
             <div className='background-content-container'>
                 <img src={mySelfie} alt="selfie" width="300px" id='background-selfie'/>
-                <p id="background-text">My name is Paolo Pedrigal (he/him) and I am current undergraduate student at University of California, Irvine, majoring in Computer Science. 
-                I am motivated to use my knowledge from my experiences and projects
-                to become a software engineer in website development.
-                Other interests I have are working out, playing basketball and volleyball, and watching movies and TV. </p>
+                <div className="background-text">
+                    <p id="background-text-1">My name is Paolo Pedrigal (he/him) and I am current undergraduate student at University of California, Irvine, majoring in Computer Science. 
+                    I am motivated to use my knowledge from my experiences and projects
+                    to become a software engineer in website development.</p>
+                    <p id="background-text-2">Other interests I have are working out, playing basketball and volleyball, and watching movies and TV.</p>
+                </div>
             </div>
         </div>
     )
@@ -30,15 +32,15 @@ function AboutMeBackgroundObjective() {
 function AboutMeSkills() {
     return (
         <div>
-            <h3>Skills</h3>
-            <ul>
+            <h3 id='skills-title'>Skills</h3>
+            <ul className='skills-filter'>
                 <li>Programming Languages</li>
                 <li>Front-End</li>
                 <li>Back-End</li>
                 <li>Data Science</li>
                 <li>Team-oriented Tech</li>
             </ul>
-            <ul>
+            <ul className='skills'>
                 <li>Python</li>
                 <li>Java</li>
                 <li>C++</li>
