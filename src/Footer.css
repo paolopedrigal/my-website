@@ -1,0 +1,36 @@
+#footer-section {
+    background-color: black;
+    padding-top: 50px;
+}
+
+#contact-me-via {
+    background-color: transparent;
+}
+
+#contact-list {
+    background-color: transparent;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 60px;
+}
+
+.contact-link-container {
+    background-color: transparent;
+}
+
+.contact-link {
+    text-decoration: none;
+    background-color: transparent;
+    color: #BDB3B3
+}
+
+#created-by-paolo-pedrigal {
+    background-color: transparent;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 45px;
+    color: #FFFDCD
+}
