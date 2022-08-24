@@ -1,11 +1,58 @@
 #projects-section {
     background-color: #354256;
+    padding-top: 100px;
+    padding-bottom: 200px;
 }
 
 #projects-section-title {
     background-color: transparent;
+    font-size: 125px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .projects-content {
     background-color: transparent;
+    padding-left: 60px;
+
+}
+
+.projects-content-title {
+    background-color: transparent;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.projects-content-title-link {
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 80px;
+    color: #DDF091;
+}
+
+.projects-content-description {
+    background-color: transparent;
+    font-size: 50px;
+    color: #E39EFC;
+}
+
+.projects-content-description-underline {
+    background-color: transparent;
+    font-size: 50px;
+    color: #E39EFC;
+    text-decoration: underline;
+}
+
+.projects-content-tech {
+    background-color: transparent;
+    font-size: 50px;
+    color: #C5C5C5
+}
+
+.projects-content-tech-underline {
+    background-color: transparent;
+    font-size: 50px;
+    color: #C5C5C5;
+    text-decoration: underline;   
 }

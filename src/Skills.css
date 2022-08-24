@@ -37,6 +37,7 @@
     flex-wrap: wrap;
     background-color: transparent;
     list-style: none;
+    justify-content: center;
 }
 
 .skill-node {
