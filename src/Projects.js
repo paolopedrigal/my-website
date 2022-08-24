@@ -1,7 +1,9 @@
+import './Projects.css';
+
 export default function Projects() {
     return (
-        <div>
-            <h2>Projects</h2>
+        <div id='projects-section'>
+            <h2 id='projects-section-title'>Projects</h2>
             <UniversalStudiosProject />
             <ValentinesWordleProject />
         </div>
@@ -10,7 +12,7 @@ export default function Projects() {
 
 function UniversalStudiosProject() {
     return (
-        <div>
+        <div className='projects-content'>
             <h3>Predicting Universal Studios Reviews</h3>
             <p>Description: Using a prepared dataset from Kaggle, I performed EDA, 
             pre-processing (text transformation), and built a classifier to predict
@@ -23,7 +25,7 @@ function UniversalStudiosProject() {
 
 function ValentinesWordleProject() {
     return(
-        <div>
+        <div className='projects-content'>
             <h3>Valentine's Wordle</h3>
             <p>Description: Built a website that mimics New York Times’s Wordle, 
             but customized it to form a sentence that asks the user to be their

@@ -1,11 +1,13 @@
 .front-container {
     position: relative;
+    background-image: linear-gradient(#283652, black)
 }
 
 #front-image {
     width: 100%;
-    height: 1000px;
+    height: 1200px;
     opacity: 0.45;
+    padding: 0px;
 }
 
 #front-name {
