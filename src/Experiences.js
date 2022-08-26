@@ -9,27 +9,52 @@ function Timeline() {
     return (
         <div id='timeline-section'>
             <h3 id='timeline-title'>Timeline</h3>
-            <MCHS />
-            <Stanford className='timeline-content'/>
-            <UCSB className='timeline-content'/>
-            <MLiora className='timeline-content'/>
-            <Skyworks className='timeline-content'/>
-            <PresentDay/> {/* Added the className timeline-content to the functional component itself*/}
+            <div id='timeline-content'>
+                <div>
+                    <span className='placeholder'></span>
+                    <span className='timeline-end-line'></span>
+                </div>
+                <div id='before-june-2021'>
+                    <div id='lhs-before-june-2021'>
+                        <div id='above-line-lhs-before-june-2021'>
+                            <h3 className='timeline-date'>May 2018</h3>
+                        </div>
+                        <div id='below-line-lhs-before-june-2021'>
+                            <p className='timeline-caption'>Graduated from Moreau Catholic High School.</p>
+                            <img src={StanfordImage} width='300px' alt='Stanford Department of Biomedical Data Science logo.' className='timeline-content'
+                            id='Stanford'/>
+                            <p className='click-for-details'>Click for details.</p>
+                        </div>
+                    </div>
+                    <div id='rhs-before-june-2021'>
+                        <div id='above-line-rhs-before-june-2021'>
+                            <img src={MCHSImage} width='300px' alt='A wide shot of Moreau Catholic High School.' className='timeline-content' id='MCHS'/>
+                            <h3 className='timeline-date'>April 2021</h3>
+                        </div>
+                        <div id='below-line-rhs-before-june-2021'>
+                            <p className='timeline-caption'>Data Science Mentorship @ Stanford Medicine, Department of Biomedical Data Science</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p id='june-2021'>June 2021</p>
+
+                <div id='after-june-2021'>
+                    <div id='lhs-after-june-2021'>
+                        <div id='above-line-lhs-after-june-2021'></div>
+                        <div id='below-line-lhs-after-june-2021'></div>
+                    </div>
+                    <div id='rhs-after-june-2021'></div>
+                </div>
+                {/* 
+                <UCSB className='timeline-content'/>
+                <MLiora className='timeline-content'/>
+                <Skyworks className='timeline-content'/>
+                <PresentDay/> Added the className timeline-content to the functional component itself */}
+            </div>
+
         </div>
-
-    );
-}
-
-function MCHS() {
-    return (
-        <img src={MCHSImage} width='300px' alt='A wide shot of Moreau Catholic High School.' className='timeline-content' id='MCHS'/>
-    );
-}
-
-function Stanford() {
-    return (
-        <img src={StanfordImage} width='300px' alt='Stanford Department of Biomedical Data Science logo.' className='timeline-content'
-        id='Stanford'/>
+            
     );
 }
 
