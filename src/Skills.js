@@ -1,3 +1,4 @@
+import SkillNode from './SkillNode';
 import './Skills.css';
 
 function Skills() {
@@ -13,30 +14,30 @@ function Skills() {
                 <li className='skill-filter'>Team-oriented Tech</li>
             </ul>
             <ul className='skills-nodes'>
-                <li className='skill-node'>Python</li>
-                <li className='skill-node'>Java</li>
-                <li className='skill-node'>C++</li>
-                <li className='skill-node'>JavaScript</li>
-                <li className='skill-node'>React JS</li>
-                <li className='skill-node'>HTML</li>
-                <li className='skill-node'>CSS</li>
-                <li className='skill-node'>Node JS</li>
-                <li className='skill-node'>Figma</li>
-                <li className='skill-node'>PostgreSQL</li>
-                <li className='skill-node'>Cassandra</li>
-                <li className='skill-node'>PyMongo</li>
-                <li className='skill-node'>Neo4j</li>
-                <li className='skill-node'>Pandas</li>
-                <li className='skill-node'>Matplotlib</li>
-                <li className='skill-node'>Numpy</li>
-                <li className='skill-node'>Sci-kit Learn</li>
-                <li className='skill-node'>NLTK</li>
-                <li className='skill-node'>R</li>
-                <li className='skill-node'>Bash</li>
-                <li className='skill-node'>Zoom</li>
-                <li className='skill-node'>GitHub</li>
-                <li className='skill-node'>Microsoft Excel</li>
-                <li className='skill-node'>Slack</li>
+                <SkillNode skill={"Python"} />
+                <SkillNode skill={"Java"} />
+                <SkillNode skill={"C++"} />
+                <SkillNode skill={"JavaScript"} />
+                <SkillNode skill={"React JS"} />
+                <SkillNode skill={"HTML"} />
+                <SkillNode skill={"CSS"} />
+                <SkillNode skill={"Node JS"} />
+                <SkillNode skill={"Figma"} />
+                <SkillNode skill={"PostgreSQL"} />
+                <SkillNode skill={"Cassandra"} />
+                <SkillNode skill={"PyMongo"} />
+                <SkillNode skill={"Neo4j"} />
+                <SkillNode skill={"Pandas"} />
+                <SkillNode skill={"Matplotlib"} />
+                <SkillNode skill={"Numpy"} />
+                <SkillNode skill={"Sci-kit Learn"} />
+                <SkillNode skill={"NLTK"} />
+                <SkillNode skill={"R"} />
+                <SkillNode skill={"Bash"} />
+                <SkillNode skill={"Zoom"} />
+                <SkillNode skill={"GitHub"} />
+                <SkillNode skill={"Microsoft Excel"} />
+                <SkillNode skill={"Slack"} />
             </ul>
         </div>
     );
