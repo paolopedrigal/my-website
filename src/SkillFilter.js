@@ -4,21 +4,16 @@ import './SkillFilter.css';
 export default function SkillFilter(props) {
 
     const [filter, setFilter] = useState({
-        isClicked: false,
         isHovered: false
     })
 
-    function handleClicked() {
-        setFilter((prevState) => ({isClicked: !prevState.isClicked, isHovered: prevState.isHovered}))
-    }
-
     function handleHovered() {
-        setFilter((prevState) => ({isClicked: prevState.isClicked, isHovered: !prevState.isHovered}))
+        setFilter((prevState) => ({isHovered: !prevState.isHovered}))
     }
 
-    function hoveredOrClicked() {
+    function hoveredOrFiltered() {
 
-        if (filter.isClicked) {
+        if (props.isFiltered) {
             return "#74F29F" // green
         }
         else if (filter.isHovered) {
@@ -30,7 +25,7 @@ export default function SkillFilter(props) {
     }
     
     return(
-        <p className='skill-filter' onClick={handleClicked} onMouseEnter={handleHovered} onMouseLeave={handleHovered} 
-        style={{backgroundColor: `${hoveredOrClicked()}`}}>{props.filter}</p>
+        <p className='skill-filter' onMouseEnter={handleHovered} onMouseLeave={handleHovered} 
+        style={{backgroundColor: `${hoveredOrFiltered()}`}}>{props.filter}</p>
     );
 }

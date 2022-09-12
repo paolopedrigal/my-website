@@ -23,6 +23,10 @@
     background-color: transparent;
 }
 
+.skills-filter-div {
+    background-color: transparent;
+}
+
 .skills-nodes {
     display: flex;
     flex-direction: row;

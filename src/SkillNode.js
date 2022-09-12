@@ -4,20 +4,20 @@ import './SkillNode.css';
 export default function SkillNode(props) {
     const [node, setNode] = useState({
         isHovered: false,
-        isClicked: false
+        // isClicked: false
     })
 
-    function handleClicked() {
-        setNode((prevState) => ({isHovered: prevState.isHovered, isClicked: !prevState.isClicked }))
-    }
+    // function handleClicked() {
+    //     setNode((prevState) => ({isHovered: prevState.isHovered, isClicked: !prevState.isClicked}))
+    // }
 
     function handleHovered() {
         setNode((prevState) => ({isHovered: !prevState.isHovered, isClicked: prevState.isClicked}))
     }
 
-    function hoveredOrClicked() {
+    function hoveredOrFiltered() {
 
-        if (node.isClicked) {
+        if (props.isFiltered) {
             return "#74F29F" // green
         }
         else if (node.isHovered) {
@@ -29,6 +29,6 @@ export default function SkillNode(props) {
     }
 
     return (
-        <p className='skill-node' onClick={handleClicked} onMouseEnter={handleHovered} onMouseLeave={handleHovered} style={{backgroundColor: `${hoveredOrClicked()}`}}>{props.skill}</p>
+        <p className='skill-node' onMouseEnter={handleHovered} onMouseLeave={handleHovered} style={{backgroundColor: `${hoveredOrFiltered()}`}}>{props.skill}</p>
     );
 }
