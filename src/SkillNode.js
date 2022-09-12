@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import { useState } from 'react';
 import './SkillNode.css';
 
 export default function SkillNode(props) {
@@ -18,13 +18,13 @@ export default function SkillNode(props) {
     function hoveredOrClicked() {
 
         if (node.isClicked) {
-            return "#74F29F"
+            return "#74F29F" // green
         }
         else if (node.isHovered) {
-            return "#CECCCC"
+            return "#CECCCC" // grey
         }
         else {
-            return "#D9D9D9"
+            return "#D9D9D9" // default
         }
     }
 

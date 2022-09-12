@@ -1,17 +1,29 @@
-import SkillNode from './SkillNode';
+import { useState } from 'react';
+import SkillNode from './SkillNode.js';
+import SkillFilter from './SkillFilter.js';
 import './Skills.css';
 
 function Skills() {
+
+    const [filtered, setFiltered] = useState({
+        isAll: false,
+        isProgLang: false,
+        isFrontEnd: false,
+        isBackEnd: false,
+        isDataScience: false,
+        isTeam: false
+        })
+
     return (
         <div className='skills-section'>
             <h3 id='skills-title'>Skills</h3>
             <ul className='skills-filters'>
-                <li className='skill-filter'>All</li>
-                <li className='skill-filter'>Programming Languages</li>
-                <li className='skill-filter'>Front-End</li>
-                <li className='skill-filter'>Back-End</li>
-                <li className='skill-filter'>Data Science</li>
-                <li className='skill-filter'>Team-oriented Tech</li>
+                <SkillFilter filter={"All"} />
+                <SkillFilter filter={"Programming Languages"} />
+                <SkillFilter filter={"Front-End"} />
+                <SkillFilter filter={"Back-End"} />
+                <SkillFilter filter={"Data Science"} />
+                <SkillFilter filter={"Team-oriented Tech"} />
             </ul>
             <ul className='skills-nodes'>
                 <SkillNode skill={"Python"} />
