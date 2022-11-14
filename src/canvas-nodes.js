@@ -8,7 +8,10 @@ export default class Nodes {
         this.radius = radius;
         this.color = color;
         this.nodes = [];
+        this.nodesNames = [];
     }
+
+    setNodesNames(nodesNames) { this.nodesNames = nodesNames; }
 
     spawnNodes() {
         for (let i = 0; i < this.numNodes; i++) {
@@ -26,7 +29,7 @@ export default class Nodes {
                 }
             }
     
-            this.nodes.push(new Node(x, y, this.radius, this.color, this.context));
+            this.nodes.push(new Node(this.nodesNames[i], x, y, this.radius, this.color, this.context));
             
         }
     }

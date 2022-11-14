@@ -1,26 +1,42 @@
 export default class Node {
-    constructor(x, y, radius, color, context) {
+    constructor(name, x, y, radius, color, context) {
+      this.name = name;
       this.x = x;
       this.y = y;
       this.velocity = {
-        x: Math.random() * 5, 
-        y: Math.random() * 5,
+        x: Math.random(), 
+        y: Math.random(),
       };
       this.radius = radius;
       this.color = color;
-      this.mass = 1; // elasitc collision
+      this.mass = 0.1; 
       this.context = context;
+
     }
   
     draw() {
       this.context.beginPath();
+
       this.context.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-      this.context.strokeStyle = this.color;
-      this.context.stroke();
-      this.context.font = "75px serif";
+      this.context.lineWidth = 10;
+      this.context.fillStyle = this.color;
+      this.context.fill();
+
+      this.context.font = "bold 35px inter";
+      this.context.fillStyle = "black"; 
       this.context.textBaseline = "middle";
       this.context.textAlign = "center";
-      this.context.fillText("Test", this.x, this.y);
+
+      if (this.name.split(" ").length > 1) {
+        let first_text = this.name.split(" ")[0];
+        let second_text = this.name.split(" ")[1];
+        this.context.fillText(first_text, this.x, this.y - 15);
+        this.context.fillText(second_text, this.x, this.y + 24);
+      } 
+      else {
+        this.context.fillText(this.name, this.x, this.y);
+      }
+
       this.context.closePath();
     }
 
