@@ -43,6 +43,14 @@ function Canvas() {
     return(
         <div className="skills-section">
             <h1 id="skills-title">Skills</h1>
+            <div className="skills-filters">
+                <div className="skill-filter">All</div>
+                <div className="skill-filter">Programming Languages</div>
+                <div className="skill-filter">Front-End</div>
+                <div className="skill-filter">Back-End</div>
+                <div className="skill-filter">Data Science</div>
+                <div className="skill-filter">Team-oriented Tech</div>
+            </div>
             <canvas 
                 ref={canvasRef}>
             </canvas>
