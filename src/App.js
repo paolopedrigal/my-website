@@ -15,11 +15,11 @@ function App() {
       <Front />
       <NavBar />
       <AboutMe />
-      <Skills />
+      <Canvas />
+      {/* <Skills /> */}
       <Timeline />
       <Projects />
       <Footer />
-      <Canvas />
     </div>
   );
 }

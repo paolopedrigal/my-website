@@ -4,12 +4,12 @@ export default class Node {
       this.x = x;
       this.y = y;
       this.velocity = {
-        x: Math.random(), 
-        y: Math.random(),
+        x: Math.random() * 0.4, 
+        y: Math.random() * 0.4,
       };
       this.radius = radius;
       this.color = color;
-      this.mass = 0.1; 
+      this.mass = 1; // elastic collision 
       this.context = context;
 
     }
