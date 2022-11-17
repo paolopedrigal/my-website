@@ -40,6 +40,10 @@ export default class Node {
       this.context.closePath();
     }
 
+    setColor(color) {
+      this.color = color;
+    }
+
     moveX() {
         this.x += this.velocity.x;
     }
@@ -64,4 +68,5 @@ export default class Node {
         this.moveX();
         this.moveY();
     }
+
 }
