@@ -84,9 +84,6 @@ function Canvas() {
         canvas.height = window.innerHeight; 
         canvas.style.backgroundColor = "transparent";
         const context = canvas.getContext("2d");   
-
-        console.log(positions);
-
         const nodes = new Nodes(numNodes, context, nodeRadius, nodeColor, positions);
         nodes.setNodesNames(nodesNames);
         nodes.spawnNodes();

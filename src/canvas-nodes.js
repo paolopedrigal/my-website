@@ -22,7 +22,6 @@ export default class Nodes {
 
             // Get xy coordinates for each node
             if (Object.keys(this.positions).length != 0) { // if positions are already known
-                console.log("Positions are known");
                 let name = this.nodesNames[i];
                 x = this.positions[name].x;
                 y = this.positions[name].y;
