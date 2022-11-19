@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
 
 import Front from './Front.js';
 import NavBar from './NavBar.js';
@@ -13,29 +13,28 @@ import './App.css';
 
 function App() {
 
+  const aboutMeRef = useRef(null);
   const skillsRef = useRef(null);
   const experienceRef = useRef(null);
   const projectsRef = useRef(null);
-
   const handleClick = (ref) => window.scrollTo({top: ref.current.offsetTop, behavior: "smooth"})
-
 
   return (
     <div>
       <Front />
       {/* <NavBar /> */}
-      <header>
-            <nav>
-                <ul className="nav-container">
-                    <li className="nav-item" id="nav-name">Paolo Pedrigal</li>
-                    <li className="nav-item" onClick={() => handleClick(skillsRef)}>Skills</li>
-                    <li className="nav-item" onClick={() => handleClick(experienceRef)}>Experience</li>
-                    <li className="nav-item" onClick={() => handleClick(projectsRef)}> Projects</li>
-                    <li className="nav-item">Resume</li>
-                </ul>
-            </nav>
-        </header>
-      <AboutMe />
+      <nav>
+        <ul className="nav-container">
+            <li className="nav-item" id="nav-name" onClick={() => handleClick(aboutMeRef)}>Paolo Pedrigal</li>
+            <li className="nav-item" onClick={() => handleClick(skillsRef)}>Skills</li>
+            <li className="nav-item" onClick={() => handleClick(experienceRef)}>Experience</li>
+            <li className="nav-item" onClick={() => handleClick(projectsRef)}> Projects</li>
+            <li className="nav-item">Resume</li>
+        </ul>
+      </nav>
+      <div ref={aboutMeRef}>
+        <AboutMe />
+      </div>
       <div ref={skillsRef}>
         <Canvas />
       </div>
