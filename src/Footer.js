@@ -2,9 +2,9 @@ import './Footer.css';
 
 export default function Footer() {
     return(
-        <div id='footer-section'>
+        <div className='footer-section'>
             <div style={{backgroundColor:"transparent"}}>
-                <ul id='contact-list'>
+                <ul className='contact-list'>
                     <li id='contact-me-via'>Contact Me via...</li>
                     <li className='contact-link-container'>
                         <a href="https://linkedin.com/in/paolopedrigal" target="_blank" className='contact-link'>LinkedIn</a>
