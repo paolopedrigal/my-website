@@ -16,7 +16,6 @@
 
 .timeline-content {
     background-color: transparent;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,13 +23,13 @@
 }
 
 .timeline-date {
-    font-size: 3.5vw;
+    font-size: 4vw;
     background-color: transparent;
     padding: 20px 0px;
 }
 
 .timeline-caption {
-    font-size: 2.5vw;
+    font-size: 3vw;
     background-color: transparent;
     width: 80%;
     font-weight: 100;
