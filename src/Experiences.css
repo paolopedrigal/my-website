@@ -1,6 +1,6 @@
 .timeline-section {
     background-image: linear-gradient(#383647, #363556);
-    padding-bottom: 300px;
+    padding-bottom: 20vw;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -16,23 +16,28 @@
 
 .timeline-content {
     background-color: transparent;
-}
-
-.timeline-line-break {
-    width: 75px;
-    border: solid thin;
-    border-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .timeline-date {
-    font-size: 4.5vw;
+    font-size: 3.5vw;
     background-color: transparent;
+    padding: 20px 0px;
 }
 
 .timeline-caption {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
     background-color: transparent;
-    padding-top: 20px;
+    width: 80%;
+    font-weight: 100;
+}
+
+.timeline-caption.location {
+    width: 55%;
 }
 
 .timeline-pic {
@@ -41,3 +46,33 @@
     height: auto;
 }
 
+.timeline-line {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    justify-content: center;
+    height: 15vw;
+    margin: 2vw 0;
+}
+
+.line {
+    border-right: solid thin;
+    border-color: white;
+    background-color: transparent;
+}
+
+#stanford-caption {
+    color: #e7a1a1;
+}
+
+#ucsb-caption {
+    color: #fffca9;
+}
+
+#mliora-caption {
+    color: #95c5fc;
+}
+
+#skyworks-caption {
+    color: #b9b7ff;
+}
