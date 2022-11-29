@@ -7,13 +7,14 @@
     background-color: transparent;
     display: flex;
     justify-content: center;
-    font-size: 125px;
+    font-size: 6.5vw;
     padding: 50px;    
 }
 
 #timeline-content {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     background-color: transparent;
 }
@@ -27,31 +28,18 @@
 #before-june-2021 {
     background-color: transparent;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-}
-
-#lhs-before-june-2021 {
-    background-color: transparent;
-    border-right: solid thin;
-    border-color: white;
-    width: 45%;
-    height: 1400px;
-}
-
-#rhs-before-june-2021 {
-    width: 45%;
-    background-color: transparent;
-    height: 1400px;
+    align-items: center;
 }
 
 .timeline-date {
-    font-size: 85px;
+    font-size: 4.5vw;
     background-color: transparent;
 }
 
 .timeline-caption {
-    font-size: 50px;
+    font-size: 3.5vw;
     background-color: transparent;
     padding-top: 20px;
 }
@@ -71,10 +59,9 @@
 }
 
 #mchs-pic {
-    border-radius: 30px;
+    border-radius: 100%;
     width: 80%;
-    margin-top: 50px;
-    margin-left: 110px;
+    height: auto;
 }
 
 #april-2021 {
@@ -88,7 +75,7 @@
 
 #stanford-pic {
     width: 90%;
-    height: 190px;
+    height: auto;
     border-radius: 30px;
     margin-top: 470px;
 }
@@ -141,7 +128,7 @@
 #ucsb-pic {
     border-radius: 30px;
     width: 70%;
-    height: 350px;
+    height: auto;
     margin-left: 110px;
     margin-top: 65px;
 }
@@ -149,7 +136,7 @@
 #mliora-pic {
     border-radius: 30px;
     width: 47%;
-    height: 350px;
+    height: auto;
     margin-left: 225px;
     margin-top: 65px;
 }
@@ -163,7 +150,7 @@
 
 #skyworks-pic {
     width: 70%;
-    height: 350px;
+    height: auto;
     border-radius: 30px;
     margin-left: 130px;
     margin-top: 400px;

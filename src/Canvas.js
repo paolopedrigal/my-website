@@ -90,8 +90,7 @@ function Canvas() {
 
         window.addEventListener('resize', () => { // updates the canvas's screen when the browser is resized
             canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-          
+            canvas.height = window.innerHeight;          
         })
 
         function animate() {
