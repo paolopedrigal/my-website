@@ -13,7 +13,7 @@ export default function Footer() {
                         <a href="https://github.com/paolopedrigal" target="_blank" className='contact-link'>GitHub</a>
                     </li>
                     <li className='contact-link-container'>
-                        <a href="mailto:paolopedrigal@gmail.com" target="_blank" className='contact-link'>Email</a>
+                        <a href="mailto:paolopedrigal@gmail.com?subject=Hello+World!" className='contact-link'>Email</a>
                     </li>
                 </ul>
             </div>
