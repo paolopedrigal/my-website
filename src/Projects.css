@@ -1,58 +1,53 @@
 #projects-section {
     background-color: #354256;
     padding-top: 75px;
-    padding-bottom: 200px;
+    padding-bottom: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #projects-section-title {
     background-color: transparent;
-    font-size: 125px;
-    display: flex;
-    justify-content: center;
+    font-size: 6.5vw;
 
 }
 
 .projects-content {
     background-color: transparent;
-    padding-left: 60px;
-
+    width: 90%;
 }
 
 .projects-content-title {
     background-color: transparent;
-    padding-top: 60px;
+    padding-top: 4vw;
     padding-bottom: 25px;
 }
 
 .projects-content-title-link {
     background-color: transparent;
     text-decoration: none;
-    font-size: 80px;
+    font-size: 4.5vw;
     color: #DDF091;
 }
 
 .projects-content-description {
     background-color: transparent;
-    font-size: 50px;
+    font-size: 3.5vw;
     color: #E39EFC;
 }
 
-.projects-content-description-underline {
-    background-color: transparent;
-    font-size: 50px;
-    color: #E39EFC;
+.projects-content-description.underline {
     text-decoration: underline;
 }
 
 .projects-content-tech {
     background-color: transparent;
-    font-size: 50px;
+    font-size: 3.5vw;
     color: #C5C5C5
 }
 
 .projects-content-tech-underline {
-    background-color: transparent;
-    font-size: 50px;
-    color: #C5C5C5;
     text-decoration: underline;   
 }

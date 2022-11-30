@@ -1,171 +1,77 @@
-#timeline-section {
+.timeline-section {
     background-image: linear-gradient(#383647, #363556);
-    padding-bottom: 300px;
+    padding-bottom: 20vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#timeline-title {
+.timeline-title {
     background-color: transparent;
-    display: flex;
-    justify-content: center;
-    font-size: 125px;
+    font-size: 6.5vw;
     padding: 50px;    
 }
 
-#timeline-content {
+.timeline-content {
+    background-color: transparent;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    background-color: transparent;
-}
-
-.timeline-line-break {
-    width: 75px;
-    border: solid thin;
-    border-color: white;
-}
-
-#before-june-2021 {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-}
-
-#lhs-before-june-2021 {
-    background-color: transparent;
-    border-right: solid thin;
-    border-color: white;
-    width: 45%;
-    height: 1400px;
-}
-
-#rhs-before-june-2021 {
-    width: 45%;
-    background-color: transparent;
-    height: 1400px;
+    align-items: center;
 }
 
 .timeline-date {
-    font-size: 85px;
+    font-size: 4vw;
     background-color: transparent;
+    padding: 20px 0px;
 }
 
 .timeline-caption {
-    font-size: 50px;
+    font-size: 3vw;
     background-color: transparent;
-    padding-top: 20px;
-}
-
-#may-2018 {
-    display: flex;
-    justify-content: right;
-    background-color: transparent;
-    padding-right: 150px;
-    padding-top: 100px;
-}
-
-#mchs-caption, #skyworks-caption {
-    display: flex;
-    text-align: right;
-    padding-right: 125px;
-}
-
-#mchs-pic {
-    border-radius: 30px;
     width: 80%;
-    margin-top: 50px;
-    margin-left: 110px;
+    font-weight: 100;
 }
 
-#april-2021 {
-    padding-top: 400px;
-    padding-left: 150px;
+.timeline-caption.location {
+    width: 55%;
+}
+
+.timeline-pic {
+    border-radius: 100%;
+    width: 30%;
+    height: auto;
+}
+
+.timeline-line {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    justify-content: center;
+    height: 15vw;
+    margin: 2vw 0;
+}
+
+.line {
+    border-right: solid thin;
+    border-color: white;
+    background-color: transparent;
 }
 
 #stanford-caption {
-    padding-left: 150px;
-}
-
-#stanford-pic {
-    width: 90%;
-    height: 190px;
-    border-radius: 30px;
-    margin-top: 470px;
-}
-
-.click-for-details {
-    font-weight: 100;
-    font-size: 30px;
-    text-align: center;
-    background-color: transparent;
-    padding-top: 10px;
-}
-
-#june-2021, #present-day{
-    text-align: center;
-}
-
-#after-june-2021 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: transparent;
-    margin-top: 20px;
-    height: 1900px;
-}
-
-#lhs-after-june-2021 {
-    border-right: solid thin;
-    border-color: white;
-    width: 45%;
-    background-color: transparent;
-    height: 1900px;
-}
-
-#rhs-after-june-2021 {
-    width: 45%;
-    background-color: transparent;
+    color: #e7a1a1;
 }
 
 #ucsb-caption {
-    text-align: right;
-    margin-right: 100px;
-    padding-top: 45px;
+    color: #fffca9;
 }
 
 #mliora-caption {
-    margin-left: 100px;
-    padding-top: 45px;
+    color: #95c5fc;
 }
 
-#ucsb-pic {
-    border-radius: 30px;
-    width: 70%;
-    height: 350px;
-    margin-left: 110px;
-    margin-top: 65px;
+#skyworks-caption {
+    color: #b9b7ff;
 }
-
-#mliora-pic {
-    border-radius: 30px;
-    width: 47%;
-    height: 350px;
-    margin-left: 225px;
-    margin-top: 65px;
-}
-
-#june-2022 {
-    padding-top: 475px;
-    display: flex;
-    justify-content: right;
-    padding-right: 150px;
-}
-
-#skyworks-pic {
-    width: 70%;
-    height: 350px;
-    border-radius: 30px;
-    margin-left: 130px;
-    margin-top: 400px;
-}
-
