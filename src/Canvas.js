@@ -2,6 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import Nodes from "./canvas-nodes.js";
 import SkillFilter from "./SkillFilter.js";
 import "./Canvas.css";
+import { hasSelectionSupport } from "@testing-library/user-event/dist/utils/index.js";
 
 
 function Canvas() {
@@ -25,7 +26,6 @@ function Canvas() {
         isAllFiltered: false,
         isProgLangFiltered: false,
         isFrontEndFiltered: false,
-        isBackEndFiltered: false,
         isBackEndFiltered: false,
         isDataScienceFiltered: false,
         isTeamOrientedFiltered: false
@@ -58,27 +58,39 @@ function Canvas() {
         })
     }
 
-    function filterProgLang() {
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    const SLEEP = 500;
+
+    async function filterProgLang() {
+        await sleep(SLEEP);
         setFiltered((prevState) => ({...prevState, isProgLangFiltered: !prevState.isProgLangFiltered }));
     }
 
-    function filterFrontEnd() {
+    async function filterFrontEnd() {
+        await sleep(SLEEP);
         setFiltered((prevState) => ({...prevState, isFrontEndFiltered: !prevState.isFrontEndFiltered}));
     }
 
-    function filterBackEnd() {
+    async function filterBackEnd() {
+        await sleep(SLEEP);
         setFiltered((prevState) => ({...prevState, isBackEndFiltered: !prevState.isBackEndFiltered}));
     }
 
-    function filterDataScience() {
+    async function filterDataScience() {
+        await sleep(SLEEP);
         setFiltered((prevState) => ({...prevState, isDataScienceFiltered: !prevState.isDataScienceFiltered}));
     }
 
-    function filterTeamOriented() {
+    async function filterTeamOriented() {
+        await sleep(SLEEP);
         setFiltered((prevState) => ({...prevState, isTeamOrientedFiltered: !prevState.isTeamOrientedFiltered}));
     }
 
     useEffect(() => {
+
         const canvas = canvasRef.current;
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight; 
@@ -96,18 +108,17 @@ function Canvas() {
         function animate() {
             requestAnimationFrame(animate);
             context.clearRect(0, 0, canvas.width, canvas.height);
-            if (filtered.isProgLangFiltered) nodes.updateNodes(nodesProgLang); 
+            if (filtered.isProgLangFiltered) nodes.updateNodes(nodesProgLang);
             if (filtered.isFrontEndFiltered) nodes.updateNodes(nodesFrontEnd);
             if (filtered.isBackEndFiltered) nodes.updateNodes(nodesBackEnd);
             if (filtered.isDataScienceFiltered) nodes.updateNodes(nodesDataScience);
             if (filtered.isTeamOrientedFiltered) nodes.updateNodes(nodesTeamOriented);
-            if (filtered.isAllFiltered) nodes.updateNodes(nodesNames);
             else {
                 nodes.updateNodes([]);
             }
             setPositions(nodes.getPositions());
         }
-
+        
         animate();
         
     }, [filtered])
