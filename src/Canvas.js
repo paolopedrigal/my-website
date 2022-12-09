@@ -10,13 +10,13 @@ function Canvas() {
     const nodesNames = ["Python", "Java", "C++", "JavaScript", "ReactJS",
         "HTML", "CSS", "Node JS", "Express", "PostgreSQL",
         "Cassandra", "PyMongo", "Neo4j", "Pandas", "Matplotlib", 
-        "Numpy", "Sci-kit Learn", "NLTK", "R", "Zoom",
+        "Numpy", "Sci-kit Learn", "NLTK", "Zoom",
         "GitHub", "Microsoft Excel", "Slack"];
     const nodesProgLang = nodesNames.slice(0, 4);
     const nodesFrontEnd = nodesNames.slice(4, 7);
     const nodesBackEnd = nodesNames.slice(7, 13);
-    const nodesDataScience = nodesNames.slice(13, 18);
-    const nodesTeamOriented = nodesNames.slice(18, nodesNames.length);
+    const nodesDataScience = nodesNames.slice(13, 19);
+    const nodesTeamOriented = nodesNames.slice(19, nodesNames.length);
     const numNodes = nodesNames.length;
     const nodeRadius = 100;
     const nodeColor = "#D9D9D9";
