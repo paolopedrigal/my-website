@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.9baa3695.css",
-    "main.js": "/my-website/static/js/main.d8b29121.js",
+    "main.css": "/my-website/static/css/main.223a6f3e.css",
+    "main.js": "/my-website/static/js/main.62b74f25.js",
     "static/media/WebsiteFrontPage.jpg": "/my-website/static/media/WebsiteFrontPage.05f01d919ccd55d1fa74.jpg",
     "static/media/selfie.jpg": "/my-website/static/media/selfie.867d0a8841ab47490fbe.jpg",
     "static/media/StanfordDataScience.jpg": "/my-website/static/media/StanfordDataScience.23bfb113d887da0ba083.jpg",
@@ -11,11 +11,11 @@
     "static/media/MLioraLLCLogo.jpg": "/my-website/static/media/MLioraLLCLogo.8241032a4ae91df193ae.jpg",
     "static/media/UCSBDataScience2.png": "/my-website/static/media/UCSBDataScience2.6bb886c5b464f8232310.png",
     "index.html": "/my-website/index.html",
-    "main.9baa3695.css.map": "/my-website/static/css/main.9baa3695.css.map",
-    "main.d8b29121.js.map": "/my-website/static/js/main.d8b29121.js.map"
+    "main.223a6f3e.css.map": "/my-website/static/css/main.223a6f3e.css.map",
+    "main.62b74f25.js.map": "/my-website/static/js/main.62b74f25.js.map"
   },
   "entrypoints": [
-    "static/css/main.9baa3695.css",
-    "static/js/main.d8b29121.js"
+    "static/css/main.223a6f3e.css",
+    "static/js/main.62b74f25.js"
   ]
 }
