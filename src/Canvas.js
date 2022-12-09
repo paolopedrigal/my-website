@@ -62,7 +62,7 @@ function Canvas() {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    const SLEEP = 500;
+    const SLEEP = 1000;
 
     async function filterProgLang() {
         await sleep(SLEEP);
