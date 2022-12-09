@@ -51,7 +51,7 @@ function Timeline() {
 
 
                 <div className="experience" ref={mchsRef}>
-                    <img src={MCHSImage} alt='A wide shot of Moreau Catholic High School.' className='timeline-pic' id="MCHS-pic"/>
+                    <img src={MCHSImage} alt='A wide shot of Moreau Catholic High School.' className='timeline-pic'/>
                     <h3 className='timeline-date'>May 2018</h3>
                     <p className='timeline-caption'>Graduated from Moreau Catholic High School</p>
                 </div>
