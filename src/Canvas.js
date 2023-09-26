@@ -119,9 +119,9 @@ function Canvas() {
             setPositions(nodes.getPositions());
         }
         
-        animate();
+        // animate();
         
-    }, [filtered])
+    }, )// [filtered])
 
 
 
