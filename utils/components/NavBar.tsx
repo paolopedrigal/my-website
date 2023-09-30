@@ -14,9 +14,6 @@ export default function NavBar() {
           <Link href="/projects">Projects</Link>
         </li>
         <li>
-          {/* <Document file="./Resume_PaoloPedrigal.pdf">
-            <Page pageNumber={0} />
-          </Document> */}
           <a href="/Resume_PaoloPedrigal.pdf" target="_blank">
             Resume
           </a>
