@@ -9,14 +9,12 @@ interface homeJson {
   email: string;
 }
 
-const homeData: homeJson = require("../utils/json/home.json");
+const homeData: homeJson = require("../assets/data/home.json");
 
 export default function Home() {
   return (
     <div>
-      <div>
-        <NavBar />
-      </div>
+      <NavBar />
       <div>{homeData.homeDescription}</div>
     </div>
   );
