@@ -1,0 +1,16 @@
+[
+  {
+    "id": "university",
+    "dateEndMonth": "June",
+    "dateEndYear": 2023,
+    "eventTitle": "Obtained B.S. Computer Science",
+    "company": "University of California, Irvine"
+  },
+  {
+    "id": "skyworks",
+    "dateEndMonth": "August",
+    "dateEndYear": 2022,
+    "eventTitle": "Product/Test Engineering Intern",
+    "company": "Skyworks Solutions, Inc."
+  }
+]
