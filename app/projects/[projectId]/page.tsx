@@ -1,4 +1,4 @@
-import GitHubProject from "@/utils/components/GitHubProject";
+import GitHubProject from "./GitHubProject";
 import Link from "next/link";
 import Image from "next/image";
 

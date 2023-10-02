@@ -1,6 +1,6 @@
 ## TODO:
 
-- Start styling pages
+- Change border to partial border for every page?
 - Make contact floating across all pages
 - Create a loading screen for JUST the home page
 - Add back image button for timeline event and project page

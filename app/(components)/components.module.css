@@ -1,0 +1,17 @@
+.navBar {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.socialsBar {
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.test {
+  text-decoration: none;
+  color: white;
+}

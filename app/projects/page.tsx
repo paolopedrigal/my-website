@@ -1,6 +1,7 @@
 import Link from "next/link";
-import NavBar from "@/utils/components/NavBar";
-import ProjectDisplay from "@/utils/components/ProjectDisplay";
+import NavBar from "@/app/(components)/NavBar";
+import ProjectDisplay from "@/app/projects/ProjectDisplay";
+import styles from "./page.module.css";
 
 interface Project {
   id: string;
@@ -16,7 +17,7 @@ const projectsData: Projects = require("../../assets/data/projects.json");
 
 export default function ProjectsPage() {
   return (
-    <div>
+    <div className={styles.projectsPage}>
       <NavBar />
       <ul>
         {Object.values(projectsData).map((project) => {

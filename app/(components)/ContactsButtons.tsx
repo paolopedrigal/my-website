@@ -1,4 +1,5 @@
 import Image from "next/image";
+import styles from "./components.module.css";
 
 interface contactsJson {
   linkedInLink: string;
@@ -14,7 +15,7 @@ const contactsData: contactsJson = require("../../assets/data/contacts.json");
 export default function ContactsButtons() {
   return (
     <div>
-      <ul>
+      <ul className={styles.socialsBar}>
         <li>
           <a href={contactsData.gitHubLink} target="_blank">
             <Image
