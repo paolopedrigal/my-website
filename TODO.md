@@ -1,7 +1,9 @@
 ## TODO:
 
-- Finish basic html/js for rest of the pages
+- Start styling pages
+- Make contact floating across all pages
 - Create a loading screen for JUST the home page
+- Add back image button for timeline event and project page
 
 ## New Notes:
 

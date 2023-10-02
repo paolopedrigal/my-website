@@ -1,7 +1,7 @@
 import Link from "next/link";
 import NavBar from "@/utils/components/NavBar";
 
-interface timelineEvent {
+interface TimelineEvent {
   id: string;
   dateEndMonth: string;
   dateEndYear: number;
@@ -9,18 +9,27 @@ interface timelineEvent {
   company: string;
 }
 
-const timelineData: timelineEvent[] = require("../../assets/data/timeline.json");
+interface Timeline {
+  [index: string]: TimelineEvent;
+}
+
+const timelineData: Timeline = require("../../assets/data/timeline.json");
 
 export default function TimelinePage() {
+  Object.keys(timelineData).map((timelineId) => {
+    console.log(timelineData[timelineId].id);
+  });
   return (
     <div>
       <NavBar />
       <ul>
-        {timelineData.map((eventObject) => (
+        {Object.keys(timelineData).map((timelineId) => (
           <li>
-            <Link href={`/timeline/${eventObject.id}`}>
-              {eventObject.eventTitle} @ {eventObject.company}{" "}
-              {eventObject.dateEndMonth} {eventObject.dateEndYear}
+            <Link href={`/timeline/${timelineId}`}>
+              {timelineData[timelineId].eventTitle} @{" "}
+              {timelineData[timelineId].company}{" "}
+              {timelineData[timelineId].dateEndMonth}{" "}
+              {timelineData[timelineId].dateEndYear}
             </Link>
           </li>
         ))}

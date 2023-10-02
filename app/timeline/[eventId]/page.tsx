@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-interface timelineEventInfo {
+interface timelineEvent {
   dateStartMonth: string;
   dateStartYear: number;
   dateEndMonth: string;
@@ -17,19 +17,19 @@ interface timelineEventInfo {
   keyTakeaways: string[];
 }
 
-interface timelineEventInfoObject {
-  [index: string]: timelineEventInfo;
+interface timeline {
+  [index: string]: timelineEvent;
 }
 
-const timelineEventInfoData: timelineEventInfoObject = require("../../../assets/data/timeline-info.json");
+const timelineEventData: timeline = require("../../../assets/data/timeline.json");
 
 export default function TimelineEvent({
   params,
 }: {
   params: { eventId: string };
 }) {
-  //   const timelineEventInfoObject: timelineEventInfo = timelineEventInfoData[`${params.eventId}`];
-  const info: timelineEventInfo = timelineEventInfoData[params.eventId];
+  //   const timeline: timelineEvent = timelineEventData[`${params.eventId}`];
+  const info: timelineEvent = timelineEventData[params.eventId];
   return (
     <div>
       <Link href="/timeline">Back</Link>

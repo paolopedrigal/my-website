@@ -1,0 +1,27 @@
+{
+  "map": {
+    "id": "map",
+    "title": "Interactive Neighborhood Map",
+    "picPublicPath": "/img/neighborhoods_project.png",
+    "summary": "Created an interactive map of neighborhoods in North San Jose, California area for a San Jose City Council Member.",
+    "notesBulletPoints": [
+      "Consulted with client for map he wanted. Coordinates of neighborhoods were provided from client through Google My Maps",
+      "Rescaled geographic coordinates using basic Python",
+      "Output neighborhoods in HTML using SVG polygons",
+      "Added JavaScript event handling for when neighborhood is clicked"
+    ],
+    "gitHubLink": "https://github.com/paolopedrigal/map",
+    "deployedLink": "https://www.electdavidcohen.com/neighborhoods",
+    "techUsedList": ["JavaScript", "HTML", "CSS", "Python", "Google My Maps"]
+  },
+  "yourdle": {
+    "id": "yourdle",
+    "title": "Yourdle (Your + Wordle)",
+    "picPublicPath": "/img/yourdle_project.png",
+    "summary": null,
+    "notesBulletPoints": ["Built a full stack website"],
+    "gitHubLink": "https://github.com/paolopedrigal/yourdle",
+    "deployedLink": null,
+    "techUsedList": ["React"]
+  }
+}

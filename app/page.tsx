@@ -3,12 +3,12 @@ import styles from "./page.module.css";
 import NavBar from "../utils/components/NavBar";
 import ContactsButtons from "../utils/components/ContactsButtons";
 
-interface homeJson {
+interface Home {
   homeProfilePicPublicPath: string;
   homeDescription: string;
 }
 
-const homeData: homeJson = require("../assets/data/home.json");
+const homeData: Home = require("../assets/data/home.json");
 
 export default function Home() {
   return (
