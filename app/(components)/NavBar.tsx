@@ -6,24 +6,27 @@ import styles from "./components.module.css";
 interface LinkStyle {
   textDecoration: string;
   color: string;
+  fontWeight: string;
 }
 
 const unclicked: LinkStyle = {
   textDecoration: "none",
   color: "white",
+  fontWeight: "200",
 };
 
 const clicked: LinkStyle = {
   textDecoration: "none",
   color: "#F9E110",
+  fontWeight: "400",
 };
 
 export default function NavBar() {
   const pathName: any = usePathname();
   return (
-    <div>
+    <div className={styles.navBarContainer}>
       <ul className={styles.navBar}>
-        <li>
+        <li className={styles.navBarListItem}>
           {pathName == "/" ? (
             <Link href="/" style={clicked}>
               Home

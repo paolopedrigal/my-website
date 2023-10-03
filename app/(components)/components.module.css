@@ -1,8 +1,17 @@
+.navBarContainer {
+  width: 100%;
+}
+
 .navBar {
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-self: revert;
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding: 30px 10px;
+  /* margin-top: 30px; */
 }
 
 .socialsBar {
@@ -14,4 +23,12 @@
 .test {
   text-decoration: none;
   color: white;
+}
+
+/* Mobile Device */
+@media (max-width: 700px) {
+  .navBar {
+    font-size: 1rem;
+    padding: 40px 5px;
+  }
 }

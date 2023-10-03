@@ -13,14 +13,21 @@ const homeData: Home = require("../assets/data/home.json");
 export default function Home() {
   return (
     <div className={styles.homePage}>
-      <div className={styles.content}>
+      <div className={styles.navBarWrapper}>
         <NavBar />
-        <Image
-          src={homeData.homeProfilePicPublicPath}
-          width={300}
-          height={300}
-          alt="Picture of Paolo Pedrigal"
-        />
+      </div>
+      <div className={styles.content}>
+        <div className={styles.circle}>
+          <Image
+            src={homeData.homeProfilePicPublicPath}
+            fill
+            alt="Picture of Paolo Pedrigal"
+            quality={100}
+            style={{ objectFit: "cover" }}
+            sizes="300px"
+          />
+        </div>
+
         <div className={styles.homeDescription}>{homeData.homeDescription}</div>
         <ContactsButtons />
       </div>

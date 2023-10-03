@@ -1,5 +1,12 @@
 .timelinePage {
   background: linear-gradient(#000000, #283652);
-  padding: 5px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBarWrapper {
+  align-self: normal;
 }

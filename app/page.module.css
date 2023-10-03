@@ -235,18 +235,54 @@
 .homePage {
   background: linear-gradient(#000000, #283652);
   height: 100%;
-  padding: 5px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .homeDescription {
   color: white;
+  width: 500px;
+  height: auto;
+  font-weight: 100;
+  margin-bottom: 80px;
+  font-size: 1.2rem;
 }
 
 .content {
-  border: solid thin #7e7e7e;
+  /* border: solid thin #7e7e7e; */
   width: 95%;
   height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navBarWrapper {
+  align-self: normal;
+}
+
+.circle {
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+/* Mobile Device */
+@media (max-width: 700px) {
+  .homeDescription {
+    width: 300px;
+  }
+
+  .circle {
+    width: 225px;
+    height: 225px;
+  }
 }

@@ -19,7 +19,9 @@ const timelineData: Timeline = require("../../assets/data/timeline.json");
 export default function TimelinePage() {
   return (
     <div className={styles.timelinePage}>
-      <NavBar />
+      <div className={styles.navBarWrapper}>
+        <NavBar />
+      </div>
       <ul>
         {Object.keys(timelineData).map((timelineId) => (
           <li key={timelineId}>
